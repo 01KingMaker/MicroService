@@ -1,5 +1,5 @@
-# build the ommage
-FROM python:latest
+# build the image
+FROM python:latest 
 WORKDIR /app
 COPY requirements.txt requirements.txt
 # install all the requirements
