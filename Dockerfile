@@ -1,4 +1,4 @@
-# create the docker image
+# create the docker images
 FROM python:latest 
 WORKDIR /app
 COPY requirements.txt requirements.txt
