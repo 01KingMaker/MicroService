@@ -4,10 +4,6 @@ import base64
 from django.shortcuts import render
 from io import BytesIO
 
-def hello(request):
-    return JsonResponse({'message': "Ok"})
-
-
 def generate_qr_code(request, text):
     image = QRCode().generate_qr_code(text=text)  # this is an image object
 
