@@ -1,9 +1,13 @@
-    # create the docker images
-    FROM python:latest 
-    WORKDIR /app
-    # install all the dependency
-    COPY requirements.txt requirements.txt
-    RUN pip install --no-cache-dir -r requirements.txt
-    COPY . .
-    EXPOSE 8000
-    CMD ["gunicorn", "--bind", "0.0.0.0:8000", "PythonMicroService.wsgi"]
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim-buster
+
+# Set environment variables
+ENV PYTHONDONTWRITEBYTECODE 1
+ENV PYTHONUNBUFFERED 1
+
+# Set work directory
+WORKDIR /code
+
+# Install dependencies
+COPY requirements.txt /code/
+RUN pip install --no
