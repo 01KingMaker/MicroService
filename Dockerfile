@@ -1,4 +1,4 @@
-    # building image
+    # building imagec
     FROM python:3.9-slim
     WORKDIR /app
         # Working directory
