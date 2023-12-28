@@ -5,9 +5,7 @@ from django.shortcuts import render
 from io import BytesIO
 
 def generate_qr_code(request, text):
-    image = QRCode().generate_qr_code(text=text)  # this is an image object
-
-    # Convert the image to base64
+    image = QRCode().generate_qr_code(text=text)
     buffered = BytesIO()
     image.save(buffered, format="JPEG")
     img_str = base64.b64encode(buffered.getvalue()).decode()
