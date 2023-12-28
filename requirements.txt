@@ -44,7 +44,7 @@ bidict==0.22.1
 bitstruct==8.15.1
 bleach==6.0.0
 blinker==1.6.3
-pandas==2.0.1
+gopandas==2.0.1
 pandocfilters==1.5.0
 paramiko==2.12.0
 parso==0.8.3
@@ -53,7 +53,6 @@ Paste==3.7.1
 PasteDeploy==3.0.1
 PasteScript==3.2.1
 patator==1.0
-pcapy==0.11.5. 
 pexpect==4.8.0
 phonenumbers==8.12.57
 pickleshare==0.7.5
